@@ -36,7 +36,6 @@ ActiveRecord::Schema.define(version: 2021_01_26_090143) do
   end
 
   create_table "foods", force: :cascade do |t|
-    t.bigint "order_id" #追記した
     t.bigint "shop_id"
     t.string "name"
     t.datetime "created_at", null: false
@@ -60,6 +59,7 @@ ActiveRecord::Schema.define(version: 2021_01_26_090143) do
     t.datetime "updated_at", null: false
     t.bigint "customer_id"
     t.bigint "address_id"
+    t.bigint "food_id"
     t.index ["address_id"], name: "index_orders_on_address_id"
     t.index ["customer_id"], name: "index_orders_on_customer_id"
   end
