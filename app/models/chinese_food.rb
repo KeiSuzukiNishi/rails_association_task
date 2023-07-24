@@ -1,5 +1,5 @@
 class ChineseFood < ActiveRecord::Base
-    belongs_to :food
-    belongs_to :shop
-    belongs_to :order_food
+    has_many :order_foodsfoods
+    has_many :shops
+    has_many :orders
 end

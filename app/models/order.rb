@@ -2,8 +2,8 @@ class Order < ApplicationRecord
     has_many :order_foods
     belongs_to :address
     belongs_to :customer
-    has_many :foods
-    has_many :italian_foods
-    has_many :japanese_foods
-    has_many :chinese_foods
+    belongs_to :food
+    belongs_to :italian_food
+    belongs_to :japanese_food
+    belongs_to :chinese_food
 end
