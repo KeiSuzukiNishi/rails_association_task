@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2021_01_26_090143) do
   end
 
   create_table "foods", force: :cascade do |t|
-    t.bigint "order_id"
+    t.bigint "order_id" #追記した
     t.bigint "shop_id"
     t.string "name"
     t.datetime "created_at", null: false
