@@ -4,4 +4,5 @@ class Food < ApplicationRecord
     has_many :japanese_foods
     has_many :chinese_foods
     belongs_to :shop
+    belongs_to :order
 end
