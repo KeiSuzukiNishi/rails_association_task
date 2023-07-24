@@ -1,5 +1,5 @@
 class Food < ApplicationRecord
     has_many :order_foods
-    has_many :orders
+    belongs_to :order
     belongs_to :shop
 end
